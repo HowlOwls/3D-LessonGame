@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53410460eb35ddb47b8b86004b0c7256, type: 3}
+  m_Name: AmmoAndHeatlPreset
+  m_EditorClassIdentifier: 
+  _entity:
+  - {fileID: 4560620756597521380, guid: 9ae12a9b32a66c64c8eeed5ad0ed5c3e, type: 3}
+  - {fileID: 631497268149979384, guid: 2cc040c2b3e50b245b344e811565fc4e, type: 3}
+  _numberOfPrefabsCreate: 2
+  _prefabName: SpawnSphere
