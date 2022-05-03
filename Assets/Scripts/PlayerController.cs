@@ -1,16 +1,17 @@
 using UnityEngine;
-
+[RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
 {
    [SerializeField] private CharacterController controller;
-   
    
    [SerializeField] private float speed = 2f;
    [SerializeField] private float gravity = -9.81f;
    
    private Vector3 velocity;
 
-   private void Start()
+
+
+   private void Awake()
    {
       controller = GetComponent<CharacterController>();
    }
@@ -19,8 +20,6 @@ public class PlayerController : MonoBehaviour
    {
       Movement();
    }
-
-
    private void Movement()
    {
       var hzMove = Input.GetAxis("Horizontal");
