@@ -16,10 +16,10 @@ public class SpawnerAmmoAndHealth : MonoBehaviour
    private void SpawnEntities()
    {
       var currentSpawnIndexPoint = 0;
-      for (var i = 0; i < _spawnManagerPreset._numberOfPrefabsCreate; i++)
+      for (var i = 0; i < _spawnManagerPreset.NumberOfPrefabsCreate; i++)
       {
-         var currenEntity = Instantiate(_spawnManagerPreset._entity[currentSpawnIndexPoint], spawnPoints[currentSpawnIndexPoint].position, Quaternion.identity);
-         currenEntity.name = _spawnManagerPreset._prefabName + _instanceNumber;
+         var currenEntity = Instantiate(_spawnManagerPreset.Entity[currentSpawnIndexPoint], spawnPoints[currentSpawnIndexPoint].position, Quaternion.identity);
+         currenEntity.name = _spawnManagerPreset.PrefabName + _instanceNumber;
          currentSpawnIndexPoint = (currentSpawnIndexPoint + 1) % spawnPoints.Length;
          _instanceNumber++;
       }
