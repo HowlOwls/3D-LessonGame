@@ -2,7 +2,12 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "SpawnManagerPreset", menuName = "ScriptableObject/SpawnManagerPreset", order= 1)]
 public class SpawnManagerPreset : ScriptableObject
 {
-   public GameObject[] _entity;
-   public  int _numberOfPrefabsCreate;
-   public string _prefabName;
+  [SerializeField] private GameObject[] _entity;
+  [SerializeField] private int _numberOfPrefabsCreate;
+  [SerializeField] private string _prefabName;
+
+
+    public GameObject[] Entity => _entity;
+    public int NumberOfPrefabsCreate => _numberOfPrefabsCreate;
+    public string PrefabName => _prefabName;
 }
