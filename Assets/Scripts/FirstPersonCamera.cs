@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class FirstPersonCamera : MonoBehaviour
@@ -24,7 +22,7 @@ public class FirstPersonCamera : MonoBehaviour
         var vLook = Input.GetAxis("Mouse Y") * cameraSensitivity* Time.deltaTime;
 
         xRotation -= vLook;
-        xRotation = Mathf.Clamp(xRotation, -45f, 45f);
+        xRotation = Mathf.Clamp(xRotation, -30f, 30f);
 
 
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
