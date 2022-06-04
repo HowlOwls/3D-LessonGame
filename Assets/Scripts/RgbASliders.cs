@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class RgbASliders : MonoBehaviour
@@ -27,7 +25,7 @@ public class RgbASliders : MonoBehaviour
         {
             GUI.Label(screenRect, labelText);
             screenRect.x += screenRect.width;
-            sliderValue = GUI.HorizontalSlider(screenRect, sliderValue, sliderMinValue,sliderMaxValue);
+            GUI.HorizontalSlider(screenRect, sliderValue, sliderMinValue,sliderMaxValue);
             return sliderValue;
         }
 
